@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сохранять брак или разводиться? Пошаговый алгоритм | Наталья Ульянова, психолог</title>
+<title>Подросток грубит и не идёт на контакт: три шага уже сегодня | Наталья Ульянова</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,23 +38,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* SITE HEADER */
+/* ── HEADER ── */
 .site-header {
-  background: white;
-  border-bottom: 1px solid var(--border);
-  padding: 14px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: white; border-bottom: 1px solid var(--border);
+  padding: 14px 0; position: sticky; top: 0; z-index: 100;
 }
 .site-header-inner {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  max-width: 780px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .site-logo { font-family: 'Playfair Display', serif; font-size: 15px; color: var(--muted); }
 .site-logo strong { color: var(--text); }
@@ -63,12 +54,11 @@ body {
 .header-cta {
   background: var(--accent); color: white;
   font-family: 'Nunito Sans', sans-serif; font-size: 13px; font-weight: 600;
-  padding: 8px 18px; text-decoration: none; border-radius: 4px; white-space: nowrap;
-  transition: background .2s;
+  padding: 8px 18px; text-decoration: none; border-radius: 4px; white-space: nowrap; transition: background .2s;
 }
 .header-cta:hover { background: #a3512e; }
 
-/* ARTICLE */
+/* ── WRAP ── */
 .article-wrap { max-width: 780px; margin: 0 auto; padding: 0 24px 80px; }
 
 .breadcrumb {
@@ -78,31 +68,26 @@ body {
 .breadcrumb a { color: var(--muted); text-decoration: none; }
 .breadcrumb span { opacity: .5; }
 
+/* ── ARTICLE HEADER ── */
 .article-header { padding: 32px 0 36px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
-
 .article-category {
   display: inline-block; font-family: 'Nunito Sans', sans-serif;
   font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 18px;
 }
-
 h1.article-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(26px, 5vw, 40px); font-weight: 600;
-  line-height: 1.2; color: var(--text); margin-bottom: 18px;
+  font-family: 'Playfair Display', serif; font-size: clamp(26px, 5vw, 40px);
+  font-weight: 600; line-height: 1.2; color: var(--text); margin-bottom: 18px;
 }
-
 .article-deck {
   font-family: 'Lora', serif; font-size: 18px; font-style: italic;
   color: var(--muted); line-height: 1.6; margin-bottom: 28px;
   border-left: 3px solid var(--accent); padding-left: 20px;
 }
-
 .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .meta-avatar {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--light); border: 2px solid var(--border);
-  overflow: hidden; flex-shrink: 0;
+  width: 44px; height: 44px; border-radius: 50%; background: var(--light);
+  border: 2px solid var(--border); overflow: hidden; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   color: var(--muted); font-size: 9px; font-family: 'Nunito Sans', sans-serif; text-align: center;
 }
@@ -112,7 +97,7 @@ h1.article-title {
 .meta-detail { color: var(--muted); margin-top: 2px; }
 .meta-read { margin-left: auto; font-family: 'Nunito Sans', sans-serif; font-size: 13px; color: var(--muted); }
 
-/* BODY */
+/* ── BODY ── */
 .article-body p { margin-bottom: 24px; }
 .article-body p:last-child { margin-bottom: 0; }
 
@@ -124,17 +109,16 @@ h2.section-head::before {
   content: ''; display: block; width: 32px; height: 3px;
   background: var(--accent); margin-bottom: 14px; border-radius: 2px;
 }
-
 h3.sub-head {
-  font-family: 'Playfair Display', serif; font-size: 19px;
-  font-weight: 400; font-style: italic; color: var(--text); margin: 36px 0 14px;
+  font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 400;
+  font-style: italic; color: var(--text); margin: 36px 0 14px;
 }
 
-/* PHOTO */
+/* ── PHOTO ── */
 .photo-block { margin: 40px 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
 .photo-placeholder {
   background: var(--light); display: flex; flex-direction: column;
-  align-items: center; justify-content: center; min-height: 340px;
+  align-items: center; justify-content: center; min-height: 320px;
   gap: 12px; color: var(--muted); font-family: 'Nunito Sans', sans-serif; font-size: 13px;
 }
 .photo-placeholder svg { opacity: .4; }
@@ -145,167 +129,207 @@ h3.sub-head {
   float: right; width: 220px; margin: 0 0 24px 32px;
   border-radius: 8px; overflow: hidden; border: 1px solid var(--border); clear: right;
 }
-.photo-inline .photo-placeholder { min-height: 260px; font-size: 11px; }
+.photo-inline .photo-placeholder { min-height: 240px; font-size: 11px; }
 .photo-inline .photo-caption { font-size: 12px; }
 @media (max-width: 580px) { .photo-inline { float: none; width: 100%; margin: 0 0 24px 0; } }
 
-/* PULL QUOTE */
+/* ── PULL QUOTE ── */
 .pull-quote {
   margin: 40px -20px; padding: 32px 40px;
   background: var(--accent-light); border-left: 4px solid var(--accent);
   font-family: 'Playfair Display', serif; font-size: 21px; font-style: italic;
   color: var(--text); line-height: 1.5;
 }
-.pull-quote cite {
-  display: block; margin-top: 14px;
-  font-family: 'Nunito Sans', sans-serif; font-size: 13px; font-style: normal; color: var(--muted);
-}
+.pull-quote cite { display: block; margin-top: 14px; font-family: 'Nunito Sans', sans-serif; font-size: 13px; font-style: normal; color: var(--muted); }
 
-/* DIVIDER */
+/* ── DIVIDER ── */
 .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
-
-/* INLINE ACCENT */
 mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2px; font-style: normal; }
 
-/* SECRET BLOCK */
-.secret-block {
-  background: var(--dark); color: white;
-  border-radius: 10px; padding: 36px 40px; margin: 40px 0;
+/* ════════════════════════════════════
+   ИНФОГРАФИКА 1: Цикл тупика
+════════════════════════════════════ */
+.infographic-cycle {
+  margin: 40px 0;
+  background: var(--dark);
+  border-radius: 12px;
+  padding: 40px;
+  color: white;
 }
-.secret-block p { color: rgba(255,255,255,.8); margin-bottom: 16px; }
-.secret-block p:last-child { margin-bottom: 0; }
-.secret-label {
+.infographic-cycle-title {
   font-family: 'Nunito Sans', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: .15em; text-transform: uppercase; color: var(--gold);
-  margin-bottom: 16px; display: block;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.4);
+  text-align: center; margin-bottom: 36px;
+}
+.cycle-wrap {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: wrap; position: relative;
+}
+.cycle-node {
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px; padding: 18px 20px; width: 148px; text-align: center;
+  flex-shrink: 0;
+}
+.cycle-node.red { background: rgba(192,98,58,.2); border-color: rgba(192,98,58,.4); }
+.cycle-node-icon { font-size: 24px; margin-bottom: 8px; }
+.cycle-node-label {
+  font-family: 'Nunito Sans', sans-serif; font-size: 13px; font-weight: 600;
+  color: white; line-height: 1.3; margin-bottom: 4px;
+}
+.cycle-node-sub {
+  font-family: 'Nunito Sans', sans-serif; font-size: 11px;
+  color: rgba(255,255,255,.45); line-height: 1.4;
+}
+.cycle-arrow {
+  font-size: 22px; color: rgba(255,255,255,.25); padding: 0 8px; flex-shrink: 0;
+}
+.cycle-footer {
+  margin-top: 28px; text-align: center;
+  font-family: 'Playfair Display', serif; font-size: 15px; font-style: italic;
+  color: rgba(255,255,255,.5);
+}
+@media (max-width: 600px) {
+  .cycle-wrap { flex-direction: column; }
+  .cycle-arrow { transform: rotate(90deg); padding: 4px 0; }
+  .cycle-node { width: 100%; }
 }
 
-/* STEP CARDS (algorithm steps) */
-.step-cards { display: flex; flex-direction: column; gap: 0; margin: 36px 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+/* ════════════════════════════════════
+   ИНФОГРАФИКА 2: Что не работает vs что работает
+════════════════════════════════════ */
+.compare-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 36px 0;
+}
+@media (max-width: 560px) { .compare-grid { grid-template-columns: 1fr; } }
 
-.step-card { background: white; padding: 32px 36px; border-bottom: 1px solid var(--border); position: relative; }
-.step-card:last-child { border-bottom: none; }
-.step-card:hover { background: #FDFCFA; }
+.compare-col { border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.compare-head {
+  padding: 14px 20px; font-family: 'Nunito Sans', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 10px;
+}
+.compare-head.bad { background: var(--warn-light); color: var(--warn); }
+.compare-head.good { background: var(--sage-light); color: var(--sage); }
+.compare-head-icon { font-size: 16px; }
+.compare-items { background: white; }
+.compare-item {
+  padding: 14px 20px; border-bottom: 1px solid var(--border);
+  font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--text); line-height: 1.5;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.compare-item:last-child { border-bottom: none; }
+.compare-item-dot { flex-shrink: 0; margin-top: 3px; font-size: 14px; }
 
-.step-header { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 16px; }
-.step-badge {
+/* ── ИНФОГРАФИКА 3: Три шага — большой визуал ── */
+.steps-visual { margin: 40px 0; }
+
+.step-visual-item {
+  display: grid; grid-template-columns: 80px 1fr; gap: 0;
+  margin-bottom: 0; position: relative;
+}
+.step-visual-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 39px; top: 80px; bottom: -1px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), rgba(192,98,58,.15));
+  z-index: 0;
+}
+.step-visual-left { display: flex; flex-direction: column; align-items: center; padding-top: 20px; position: relative; z-index: 1; }
+.step-circle {
+  width: 56px; height: 56px; border-radius: 50%;
   background: var(--accent); color: white;
-  font-family: 'Nunito Sans', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase;
-  padding: 6px 14px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; margin-top: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600;
+  flex-shrink: 0; box-shadow: 0 4px 16px rgba(192,98,58,.3);
 }
-.step-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; line-height: 1.25; }
-.step-body { font-size: 16px; line-height: 1.75; color: var(--text); }
-.step-body p { margin-bottom: 14px; }
-.step-body p:last-child { margin-bottom: 0; }
+.step-visual-right {
+  background: white; border: 1px solid var(--border); border-radius: 10px;
+  margin: 12px 0 28px 24px; padding: 28px 32px;
+}
+.step-tag {
+  font-family: 'Nunito Sans', sans-serif; font-size: 10px; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+}
+.step-visual-title {
+  font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 600;
+  line-height: 1.25; margin-bottom: 16px;
+}
+.step-visual-body { font-size: 15px; color: var(--text); line-height: 1.75; }
+.step-visual-body p { margin-bottom: 14px; }
+.step-visual-body p:last-child { margin-bottom: 0; }
 
-/* QUESTION LIST */
-.q-list { list-style: none; margin: 20px 0; }
-.q-list li {
-  padding: 14px 18px; margin-bottom: 10px;
-  background: var(--blue-light); border-left: 3px solid var(--blue);
-  border-radius: 0 6px 6px 0;
+.step-result-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--sage-light); border: 1px solid #C4D8CC;
+  border-radius: 20px; padding: 8px 16px; margin-top: 16px;
+  font-family: 'Nunito Sans', sans-serif; font-size: 13px; color: var(--sage); font-weight: 600;
+}
+@media (max-width: 520px) {
+  .step-visual-item { grid-template-columns: 1fr; }
+  .step-visual-item::after { display: none; }
+  .step-visual-left { flex-direction: row; padding: 0 0 12px 0; }
+  .step-visual-right { margin: 0 0 24px 0; }
+}
+
+/* ── ИНФОГРАФИКА 4: Фразы — сравнение ── */
+.phrase-compare { margin: 28px 0; display: flex; flex-direction: column; gap: 12px; }
+.phrase-pair { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 0; align-items: stretch; }
+@media (max-width: 560px) { .phrase-pair { grid-template-columns: 1fr; gap: 8px; } }
+.phrase-box {
+  padding: 18px 20px; border-radius: 8px;
+  font-family: 'Nunito Sans', sans-serif; font-size: 14px; line-height: 1.6;
+}
+.phrase-box.bad { background: var(--warn-light); border: 1px solid #E8C4C4; color: var(--text); }
+.phrase-box.good { background: var(--sage-light); border: 1px solid #C4D8CC; color: var(--text); }
+.phrase-label {
+  font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  margin-bottom: 6px; display: block;
+}
+.phrase-label.bad { color: var(--warn); }
+.phrase-label.good { color: var(--sage); }
+.phrase-arrow {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; color: var(--muted); opacity: .4;
+}
+
+/* ── ИНФОГРАФИКА 5: Почему срываются ── */
+.breakdown-flow { margin: 36px 0; }
+.breakdown-title {
+  font-family: 'Nunito Sans', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--warn);
+  margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+}
+.breakdown-title::after { content: ''; flex: 1; height: 1px; background: rgba(139,58,58,.2); }
+.breakdown-steps { display: flex; flex-direction: column; gap: 0; }
+.breakdown-step {
+  display: grid; grid-template-columns: 36px 1fr; gap: 16px; align-items: start;
+  padding: 16px 0; border-bottom: 1px dashed rgba(139,58,58,.15);
+}
+.breakdown-step:last-child { border-bottom: none; }
+.breakdown-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--warn-light); border: 1px solid #E8C4C4;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Nunito Sans', sans-serif; font-size: 13px; font-weight: 700; color: var(--warn);
+  flex-shrink: 0; margin-top: 2px;
+}
+.breakdown-text {
   font-family: 'Nunito Sans', sans-serif; font-size: 15px; color: var(--text); line-height: 1.6;
 }
-.q-num { font-weight: 700; color: var(--blue); margin-right: 8px; }
+.breakdown-text strong { color: var(--warn); }
 
-/* TWO COL LIST */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-@media (max-width: 560px) { .two-col { grid-template-columns: 1fr; } }
+/* ── WHAT SPECIALIST DOES ── */
+.specialist-list { margin: 28px 0; display: flex; flex-direction: column; gap: 0; background: var(--sage-light); border: 1px solid #C4D8CC; border-radius: 10px; overflow: hidden; }
+.specialist-item {
+  display: flex; gap: 16px; padding: 18px 24px; border-bottom: 1px solid rgba(90,122,106,.12);
+  align-items: flex-start;
+}
+.specialist-item:last-child { border-bottom: none; }
+.specialist-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.specialist-text { font-family: 'Nunito Sans', sans-serif; font-size: 15px; color: var(--text); line-height: 1.6; }
 
-.col-box { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-.col-box-head {
-  font-family: 'Nunito Sans', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: .1em; text-transform: uppercase; padding: 12px 18px;
-  background: var(--light); color: var(--muted);
-}
-.col-box ul { list-style: none; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
-.col-box ul li {
-  font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--text);
-  line-height: 1.5; padding-left: 18px; position: relative;
-}
-.col-box ul li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
-
-/* SCENARIO CARDS */
-.scenarios { display: flex; flex-direction: column; gap: 16px; margin: 28px 0; }
-
-.scenario { border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
-.scenario-head { padding: 14px 24px; font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; display: flex; align-items: center; gap: 12px; }
-.scenario-head .s-label { font-size: 20px; font-family: 'Playfair Display', serif; font-weight: 600; letter-spacing: 0; text-transform: none; }
-.scenario.green .scenario-head { background: var(--sage-light); color: var(--sage); }
-.scenario.amber .scenario-head { background: var(--gold-light); color: var(--gold); }
-.scenario.red .scenario-head { background: var(--warn-light); color: var(--warn); }
-.scenario-body { background: white; padding: 24px; }
-.scenario-body p { font-family: 'Nunito Sans', sans-serif; font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
-.scenario-body p:last-child { margin-bottom: 0; }
-.scenario-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
-@media (max-width: 500px) { .scenario-row { grid-template-columns: 1fr; } }
-.scenario-pill {
-  border-radius: 6px; padding: 12px 16px;
-  font-family: 'Nunito Sans', sans-serif; font-size: 13px; line-height: 1.5;
-}
-.scenario-pill.cost { background: var(--warn-light); }
-.scenario-pill.gain { background: var(--sage-light); }
-.scenario-pill strong { display: block; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; opacity: .6; }
-
-/* CONTRACT */
-.contract-block {
-  background: white; border: 1px solid var(--border); border-radius: 10px;
-  overflow: hidden; margin: 28px 0;
-}
-.contract-head {
-  background: var(--dark); color: white; padding: 16px 28px;
-  font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700;
-  letter-spacing: .12em; text-transform: uppercase;
-}
-.contract-rows { }
-.contract-row {
-  display: grid; grid-template-columns: 110px 1fr; border-bottom: 1px solid var(--border);
-}
-.contract-row:last-child { border-bottom: none; }
-.contract-topic {
-  background: var(--light); padding: 16px 18px;
-  font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700;
-  letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
-  display: flex; align-items: center; border-right: 1px solid var(--border);
-}
-.contract-content {
-  padding: 16px 20px;
-  font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--text); line-height: 1.6;
-}
-@media (max-width: 500px) {
-  .contract-row { grid-template-columns: 1fr; }
-  .contract-topic { border-right: none; border-bottom: 1px solid var(--border); }
-}
-
-/* TIMELINE */
-.timeline { margin: 28px 0; display: flex; flex-direction: column; gap: 0; }
-.timeline-week {
-  display: grid; grid-template-columns: 100px 1fr;
-  border-bottom: 1px solid var(--border);
-  background: white; border-radius: 0;
-}
-.timeline-week:first-child { border-radius: 8px 8px 0 0; border: 1px solid var(--border); border-bottom: none; }
-.timeline-week:last-child { border-radius: 0 0 8px 8px; border: 1px solid var(--border); border-top: none; }
-.timeline-week:not(:first-child):not(:last-child) { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
-.week-label {
-  background: var(--accent); color: white; padding: 20px 16px;
-  font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700;
-  letter-spacing: .06em; text-transform: uppercase; text-align: center;
-  display: flex; align-items: center; justify-content: center;
-}
-.week-content { padding: 20px 24px; }
-.week-content p { font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--muted); margin-bottom: 0; }
-.week-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
-.week-items { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
-.week-items li {
-  font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--text);
-  padding-left: 18px; position: relative; line-height: 1.5;
-}
-.week-items li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
-@media (max-width: 500px) { .timeline-week { grid-template-columns: 1fr; } .week-label { padding: 10px 16px; } }
-
-/* SESSION CARDS */
+/* ── SESSIONS ── */
 .sessions { display: flex; flex-direction: column; gap: 16px; margin: 36px 0; }
 .session-card {
   background: white; border: 1px solid var(--border); border-radius: 8px;
@@ -319,49 +343,21 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
 .session-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
 .session-time { font-family: 'Nunito Sans', sans-serif; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
 .session-body { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
-.session-result {
+.session-end-badge {
+  display: inline-flex; gap: 8px; align-items: center;
   background: var(--gold-light); border-left: 3px solid var(--gold);
-  padding: 10px 14px; font-family: 'Nunito Sans', sans-serif; font-size: 13px;
-  color: var(--text); border-radius: 0 4px 4px 0;
+  padding: 10px 14px; font-family: 'Nunito Sans', sans-serif; font-size: 13px; color: var(--text);
 }
-.session-result strong { color: var(--gold); }
+.session-end-badge strong { color: var(--gold); }
+.session-bullets { list-style: none; margin: 10px 0 14px; }
+.session-bullets li {
+  font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--muted);
+  padding: 5px 0; display: flex; gap: 10px;
+}
+.session-bullets li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
 @media (max-width: 520px) { .session-card { grid-template-columns: 1fr; gap: 12px; } }
 
-/* WHY NOT ALONE */
-.why-block {
-  background: var(--warn-light); border: 1px solid #E8C4C4; border-radius: 8px;
-  padding: 32px 36px; margin: 36px 0;
-}
-.why-block-title {
-  font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--warn); margin-bottom: 18px;
-}
-.why-list { list-style: none; }
-.why-list li {
-  padding: 11px 0; border-bottom: 1px solid rgba(139,58,58,.1);
-  font-size: 15px; display: flex; gap: 14px; align-items: flex-start;
-}
-.why-list li:last-child { border-bottom: none; }
-.why-list li::before { content: '✕'; color: var(--warn); font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 13px; flex-shrink: 0; margin-top: 3px; }
-
-/* ROLES */
-.roles-block {
-  background: var(--sage-light); border: 1px solid #C4D8CC; border-radius: 8px;
-  padding: 32px 36px; margin: 28px 0;
-}
-.roles-title {
-  font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--sage); margin-bottom: 18px;
-}
-.roles-list { list-style: none; }
-.roles-list li {
-  padding: 11px 0; border-bottom: 1px solid rgba(90,122,106,.12);
-  font-size: 15px; display: flex; gap: 14px; align-items: flex-start;
-}
-.roles-list li:last-child { border-bottom: none; }
-.roles-list li::before { content: '✓'; color: var(--sage); font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-top: 2px; }
-
-/* EXPERT */
+/* ── EXPERT ── */
 .expert-block {
   background: var(--gold-light); border: 1px solid #E0CC98; border-radius: 8px;
   padding: 32px; margin: 40px 0; display: grid; grid-template-columns: 120px 1fr; gap: 28px; align-items: start;
@@ -372,7 +368,7 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
   width: 100px; height: 100px; border-radius: 50%; background: var(--light);
   border: 3px solid white; box-shadow: 0 2px 12px rgba(0,0,0,.1);
   display: flex; align-items: center; justify-content: center;
-  color: var(--muted); font-family: 'Nunito Sans', sans-serif; font-size: 9px; text-align: center; overflow: hidden;
+  color: var(--muted); font-size: 9px; text-align: center; overflow: hidden;
 }
 .expert-photo img { width: 100%; height: 100%; object-fit: cover; }
 .expert-name-sm { font-family: 'Nunito Sans', sans-serif; font-size: 11px; color: var(--muted); text-align: center; }
@@ -385,20 +381,20 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
 .expert-creds li:last-child { border-bottom: none; }
 .expert-creds li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
 
-/* PRICE */
+/* ── PRICE ── */
 .price-block {
   background: var(--dark); color: white; border-radius: 10px;
   padding: 40px; margin: 48px 0; position: relative; overflow: hidden;
 }
 .price-block::before {
-  content: '180 000'; position: absolute; right: -20px; bottom: -30px;
+  content: '140 000'; position: absolute; right: -20px; bottom: -30px;
   font-family: 'Playfair Display', serif; font-size: 100px; font-weight: 600;
   color: rgba(255,255,255,.04); line-height: 1; pointer-events: none;
 }
 .price-label { font-family: 'Nunito Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 8px; }
 .price-title { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 20px; }
-.price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
-@media (max-width: 560px) { .price-grid { grid-template-columns: 1fr; } }
+.price-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+@media (max-width: 560px) { .price-grid-2 { grid-template-columns: 1fr; } }
 .price-option { border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 24px; }
 .price-option.featured { border-color: var(--accent); background: rgba(192,98,58,.15); }
 .price-option-label { font-family: 'Nunito Sans', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 8px; }
@@ -406,40 +402,37 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
 .price-value { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 600; color: white; line-height: 1; margin-bottom: 4px; }
 .price-value span { font-size: 20px; }
 .price-per { font-family: 'Nunito Sans', sans-serif; font-size: 12px; color: rgba(255,255,255,.4); margin-bottom: 16px; }
-.price-includes { list-style: none; }
-.price-includes li {
+.price-inc { list-style: none; }
+.price-inc li {
   padding: 7px 0; font-family: 'Nunito Sans', sans-serif; font-size: 13px;
   color: rgba(255,255,255,.7); display: flex; gap: 10px; border-bottom: 1px solid rgba(255,255,255,.06);
 }
-.price-includes li:last-child { border-bottom: none; }
-.price-includes li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+.price-inc li:last-child { border-bottom: none; }
+.price-inc li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
 .price-note { font-family: 'Nunito Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,.4); margin-bottom: 28px; font-style: italic; }
-
-/* BONUS */
-.bonuses { margin: 24px 0; display: flex; flex-direction: column; gap: 1px; background: var(--border); border-radius: 8px; overflow: hidden; }
-.bonus-item { background: white; padding: 22px 28px; display: grid; grid-template-columns: 90px 1fr; gap: 20px; align-items: start; }
-.bonus-tag { background: var(--dark); color: white; border-radius: 4px; padding: 8px; font-family: 'Nunito Sans', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-align: center; line-height: 1.4; }
-.bonus-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; margin-bottom: 4px; }
-.bonus-body { font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--muted); line-height: 1.6; }
-@media (max-width: 500px) { .bonus-item { grid-template-columns: 1fr; } }
-
-/* BTN */
 .btn-cta {
   display: block; background: var(--accent); color: white; text-align: center;
   padding: 20px; font-family: 'Nunito Sans', sans-serif; font-size: 14px; font-weight: 700;
   letter-spacing: .06em; text-decoration: none; border-radius: 6px; transition: background .2s;
 }
 .btn-cta:hover { background: #a3512e; }
-
 .btn-secondary {
   display: block; background: rgba(255,255,255,.08); color: white; text-align: center;
   padding: 16px; font-family: 'Nunito Sans', sans-serif; font-size: 13px; font-weight: 600;
-  letter-spacing: .06em; text-decoration: none; border-radius: 6px; border: 1px solid rgba(255,255,255,.15);
+  text-decoration: none; border-radius: 6px; border: 1px solid rgba(255,255,255,.15);
   transition: background .2s; margin-top: 12px;
 }
 .btn-secondary:hover { background: rgba(255,255,255,.14); }
 
-/* PS */
+/* ── BONUS ── */
+.bonuses { margin: 24px 0; display: flex; flex-direction: column; gap: 1px; background: var(--border); border-radius: 8px; overflow: hidden; }
+.bonus-item { background: white; padding: 22px 28px; display: grid; grid-template-columns: 90px 1fr; gap: 20px; align-items: start; }
+.bonus-tag { background: var(--dark); color: white; border-radius: 4px; padding: 8px; font-family: 'Nunito Sans', sans-serif; font-size: 10px; font-weight: 700; text-align: center; line-height: 1.4; }
+.bonus-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; margin-bottom: 4px; color: var(--text); } /* Цвет изменен на черный */
+.bonus-body { font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: var(--muted); line-height: 1.6; }
+@media (max-width: 500px) { .bonus-item { grid-template-columns: 1fr; } }
+
+/* ── PS ── */
 .ps-block {
   background: var(--gold-light); border: 1px solid #E0CC98; border-radius: 8px;
   padding: 28px 32px; margin: 40px 0;
@@ -448,7 +441,7 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
 .ps-block p:last-child { margin-bottom: 0; }
 .ps-label { font-family: 'Nunito Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
 
-/* STICKY CTA */
+/* ── STICKY CTA ── */
 .sticky-cta {
   position: fixed; bottom: 0; left: 0; right: 0;
   background: white; border-top: 1px solid var(--border);
@@ -465,7 +458,7 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
   border-radius: 5px; white-space: nowrap; flex-shrink: 0;
 }
 
-/* FOOTER */
+/* ── FOOTER ── */
 .article-footer {
   background: var(--dark); color: rgba(255,255,255,.5); text-align: center;
   padding: 40px 24px; font-family: 'Nunito Sans', sans-serif; font-size: 13px; line-height: 1.8;
@@ -476,17 +469,17 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
 @media (max-width: 600px) {
   .pull-quote { margin: 32px 0; padding: 24px; font-size: 18px; }
   .price-block { padding: 28px 24px; }
-  h2.section-head { margin-top: 40px; }
 }
 </style>
 </head>
 <body>
 
-<!-- SITE HEADER -->
 <header class="site-header">
   <div class="site-header-inner">
     <div class="site-logo"><strong>Наталья Ульянова</strong> · психолог</div>
     <nav class="site-nav">
+      <a href="#">Статьи</a>
+      <a href="#">Обо мне</a>
     </nav>
     <a href="#zapis" class="header-cta">Записаться</a>
   </div>
@@ -494,436 +487,364 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
 
 <div class="article-wrap">
 
-  <!-- HEADER -->
+  <div class="breadcrumb">
+    <a href="#">Главная</a>
+    <span>/</span>
+    <a href="#">Подростки</a>
+    <span>/</span>
+    Первые шаги
+  </div>
+
   <header class="article-header">
-    <span class="article-category">Семейная психология · Кризис в паре</span>
-    <h1 class="article-title">Как понять, сохранять брак или разводиться? Пошаговый алгоритм для пар, которые застряли между «терпеть» и «уйти»</h1>
-    <p class="article-deck">Без терапии на годы. Без судов и адвокатов. Просто честная рабочая инструкция. Прочитайте до конца — и вы узнаете, что делать.</p>
+    <span class="article-category">Семейная психология · Подростки · Практика</span>
+    <h1 class="article-title">Подросток грубит, забросил учёбу и не идёт на контакт: три шага, которые можно сделать уже сегодня</h1>
+    <p class="article-deck">Без криков, наказаний и бесполезных разговоров «по душам». Если вы чувствуете, что теряете контроль — прочитайте до конца, там будет конкретика.</p>
     <div class="article-meta">
       <div class="meta-avatar">
-        <!-- ФОТО: маленький аватар -->
-        <img src="gQbWitjX6ARCUNnvwAWn7_foQ54nNf.png" alt="Аватар автора">
-        <span>ФОТО<br>автора</span>
+        <img src="photo4.jpg" alt="Наталья Ульянова" onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'text-align:center;font-size:9px;\'>ФОТО</span>'">
       </div>
       <div class="meta-info">
         <div class="meta-name">Наталья Ульянова</div>
-        <div class="meta-detail">Психолог · медиатор · 30 лет практики</div>
+        <div class="meta-detail">Психолог · 30 лет практики · Детский, семейный, медицинский</div>
       </div>
-      <div class="meta-read">15 мин. чтения</div>
+      <div class="meta-read">11 мин. чтения</div>
     </div>
   </header>
 
   <div class="article-body">
 
-    <!-- HERO PHOTO -->
     <div class="photo-block">
-  <img src="gQbWitjX6ARCUNnvwAWn7_foQ54nNf.png" alt="Психолог Наталья Ульянова"
-    style="width:100%; height:340px; object-fit:cover; display:block;">
-  <div class="photo-caption">Наталья Ульянова — семейный психолог, медиатор. 30 лет помогает парам принять решение и выйти из тупика.</div>
-</div>
-
-    <p>Вы устали. Он устал. Вы оба устали делать вид, что всё нормально. Или делать вид, что друг друга не существует.</p>
-
-    <p>У вас внутри ком. Вы не знаете, что лучше: <mark>терпеть дальше или наконец развестись.</mark> С одной стороны — страшно потерять детей, квартиру, бизнес, привычную жизнь. С другой — больше нет сил жить с чужим человеком под одной крышей.</p>
-
-    <p>Вы пробовали говорить. Не помогает. Вы пробовали молчать. Стало только хуже. Вы даже ходили к психологу. Вам сказали «делитесь чувствами». Вы поделились. Он поделился. Психолог покивал. Вы вышли — и через неделю всё вернулось.</p>
-
-    <div class="pull-quote">
-      Знаете почему? Потому что вам не дали главного — алгоритма. Чёткой, пошаговой инструкции, которая работает в любой ситуации.
+      <img src="photo1.jpg" alt="Психолог Наталья Ульянова"
+        style="width:100%; height:340px; object-fit:cover; display:block;"
+        onerror="this.outerHTML='<div class=\'photo-placeholder\' style=\'min-height:320px;\'><svg width=\'48\' height=\'48\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><path d=\'m21 15-5-5L5 21\'/></svg><div class=\'photo-placeholder-label\'>Портрет Натальи Ульяновой · широкое фото</div></div>'">
+      <div class="photo-caption">Наталья Ульянова — семейный и детский психолог. 30 лет работает с семьями, где подростки перестали слушаться.</div>
     </div>
 
-    <p>Меня зовут <strong>Наталья Ульянова</strong>. 30 лет я работаю с парами в кризисе. Семейный психолог, медицинский психолог, медиатор. Я тот человек, который садится между мужем и женой, когда они уже ненавидят друг друга, и помогает им принять решение.</p>
+    <p>Если вы читаете этот text — вы, скорее всего, уже перепробовали многое. Разговоры за ужином превращаются в монологи: вы говорите, он молчит или уходит в наушники. Замечания про учёбу заканчиваются хлопаньем двери. Попытки ограничить телефон — скандалом, после которого вы чувствуете себя плохим родителем.</p>
 
-    <p>Сегодня я поделюсь с вами этим алгоритмом. Я <strong>не буду уговаривать сохранить семью любой ценой</strong> и не буду подталкивать к разводу. Просто дам инструмент. А вы сами решите, что с ним делать.</p>
+    <p>Один психолог советует «дать свободу», другой — «усилить контроль». Подруги говорят «это возраст, пройдёт», но внутри у вас всё сжимается от страха: <mark>а вдруг не пройдёт?</mark></p>
+
+    <div class="infographic-cycle">
+      <div class="infographic-cycle-title">Типичный цикл, в котором застревают родители</div>
+      <div class="cycle-wrap">
+        <div class="cycle-node red">
+          <div class="cycle-node-icon">😤</div>
+          <div class="cycle-node-label">Подросток грубит</div>
+          <div class="cycle-node-sub">или игнорирует, или двойка</div>
+        </div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node">
+          <div class="cycle-node-icon">📢</div>
+          <div class="cycle-node-label">Нотация / крик / наказание</div>
+          <div class="cycle-node-sub">телефон забрали, лекция прочитана</div>
+        </div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node">
+          <div class="cycle-node-icon">🚪</div>
+          <div class="cycle-node-label">Он закрывается ещё сильнее</div>
+          <div class="cycle-node-sub">хлопает дверью, молчит неделю</div>
+        </div>
+        <div class="cycle-arrow">→</div>
+        <div class="cycle-node">
+          <div class="cycle-node-icon">😔</div>
+          <div class="cycle-node-label">Родитель чувствует вину</div>
+          <div class="cycle-node-sub">отступает или ужесточает — и всё по кругу</div>
+        </div>
+      </div>
+      <div class="cycle-footer">Без смены стратегии этот круг не разорвать. Он самоподдерживающийся.</div>
+    </div>
+
+    <p>Меня зовут <strong>Наталья Ульянова</strong>. Я семейный и детский психолог, и 30 лет я работаю с семьями, где подростки перестали слушаться. За это время я увидела одну закономерность: большинство родителей используют стратегии, которые <em>гарантированно</em> ведут в тупик. Не потому что они плохие родители — а потому что их никто никогда не научил работать с подростками иначе.</p>
+
+    <p>Здесь я покажу три конкретных шага, которые можно сделать уже сегодня. А в конце мы честно поговорим о том, что эти шаги дадут — и чего без поддержки специалиста добиться не получится.</p>
 
     <hr class="divider">
 
-    <h2 class="section-head">Секрет, о котором молчат 90% психологов</h2>
+    <h2 class="section-head">Три шага к контакту</h2>
 
-    <!-- Inline photo -->
+    <div class="steps-visual">
+
+      <div class="step-visual-item">
+        <div class="step-visual-left">
+          <div class="step-circle">1</div>
+        </div>
+        <div class="step-visual-right">
+          <div class="step-tag">Шаг первый · неделя наблюдения</div>
+          <div class="step-visual-title">Остановите то, что не работает</div>
+          <div class="step-visual-body">
+            <p>Звучит слишком просто, но это самый трудный шаг. Родители подростков обычно делятся на два типа: те, кто ужесточает контроль, и те, кто опускает руки. <strong>Ни то, ни другое не ведёт к контакту.</strong></p>
+            <p>Поэтому первое — на неделю перестать делать то, что гарантированно отдаляет ребёнка:</p>
+          </div>
+
+          <div class="compare-grid" style="margin: 20px 0 16px;">
+            <div class="compare-col">
+              <div class="compare-head bad"><span class="compare-head-icon">✕</span> Не работает никогда</div>
+              <div class="compare-items">
+                <div class="compare-item"><span class="compare-item-dot">✕</span>Нотации про будущее: «пойдёшь в дворники»</div>
+                <div class="compare-item"><span class="compare-item-dot">✕</span>Наказания не связанные с поступком</div>
+                <div class="compare-item"><span class="compare-item-dot">✕</span>Давление через чувство вины</div>
+                <div class="compare-item"><span class="compare-item-dot">✕</span>Жёсткий контроль каждого шага</div>
+              </div>
+            </div>
+            <div class="compare-col">
+              <div class="compare-head good"><span class="compare-head-icon">✓</span> Что делать вместо этого</div>
+              <div class="compare-items">
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">✓</span>Объявить внутренний «мораторий» на нотации</div>
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">✓</span>Наблюдать: когда он открывается, когда — нет</div>
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">✓</span>Замечать повторяющиеся сценарии конфликтов</div>
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">✓</span>Просто быть рядом — без повестки</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-visual-body">
+            <p>Задача этой недели — просто заметить, в какие моменты он идёт на контакт, а в какие закрывается. Обычно родители удивляются, обнаруживая, что большая часть конфликтов возникает из-за одних и тех же сценариев. Без этого наблюдения вы будете топтаться на месте.</p>
+          </div>
+          <div class="step-result-pill">→ Вы увидите паттерн. Это уже огромно.</div>
+        </div>
+      </div>
+
+      <div class="step-visual-item">
+        <div class="step-visual-left">
+          <div class="step-circle">2</div>
+        </div>
+        <div class="step-visual-right">
+          <div class="step-tag">Шаг второй · один разговор</div>
+          <div class="step-visual-title">Один разговор по-новому</div>
+          <div class="step-visual-body">
+            <p>После недели наблюдения попробуйте поговорить — но не так, как раньше. Забудьте фразы «ты должен», «ты меня не уважаешь». Вот схема разговора, которая работает, если вы готовы его <em>действительно</em> услышать.</p>
+          </div>
+
+          <div class="phrase-compare">
+            <div class="phrase-pair">
+              <div class="phrase-box bad">
+                <span class="phrase-label bad">Старая фраза</span>
+                «Ты перестал делать уроки, ты совсем обленился»
+              </div>
+              <div class="phrase-arrow">→</div>
+              <div class="phrase-box good">
+                <span class="phrase-label good">Новая фраза</span>
+                «Я заметила, что оценки снизились, и я волнуюсь. Не потому что оценки важны сами по себе — я не понимаю, что происходит, и могу ли я помочь»
+              </div>
+            </div>
+          </div>
+
+          <div class="step-visual-body">
+            <p>В первом случае он защищается. Во втором — может хотя бы задуматься.</p>
+            <p>Ещё два правила разговора: <strong>признайте его взросление</strong> («я понимаю, что ты уже не маленький, и я не хочу контролировать каждый шаг»). И <strong>замолчите после того, как сказали.</strong> Самое трудное для родителя — не договаривать и не комментировать. Даже если он скажет «отстань» — это тоже информация.</p>
+            <p>Этот разговор не решит всё. Но он ломает привычный сценарий — и оставляет маленькую щель для контакта.</p>
+          </div>
+          <div class="step-result-pill">→ Привычный защитный механизм сбит. Щель открыта.</div>
+        </div>
+      </div>
+
+      <div class="step-visual-item">
+        <div class="step-visual-left">
+          <div class="step-circle">3</div>
+        </div>
+        <div class="step-visual-right">
+          <div class="step-tag">Шаг третий · одно правило</div>
+          <div class="step-visual-title">Одно маленькое правило — для себя</div>
+          <div class="step-visual-body">
+            <p>Родители часто хотят, чтобы подросток менялся, но сами продолжают делать то же самое. А подростки очень чувствительны к несправедливости: если вы требуете уважения, но можете накричать — он не будет уважать.</p>
+            <p>Поэтому третий шаг — ввести <strong>одно простое правило для себя</strong>. Выберите одно, которое вам реально по силам соблюдать неделю:</p>
+          </div>
+
+          <div class="compare-grid" style="margin: 16px 0;">
+            <div class="compare-col">
+              <div class="compare-head good" style="font-size:10px;"><span class="compare-head-icon">✓</span> Примеры правил</div>
+              <div class="compare-items">
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">→</span>«Я не кричу в ответ»</div>
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">→</span>«Я стучу в дверь, прежде чем зайти»</div>
+                <div class="compare-item"><span class="compare-item-dot" style="color:var(--sage)">→</span>«Я не проверяю телефон без спроса»</div>
+              </div>
+            </div>
+            <div class="compare-col" style="background:white;">
+              <div class="compare-head" style="background:var(--blue-light); color:var(--blue);"><span class="compare-head-icon">💡</span> Почему это работает</div>
+              <div class="compare-items">
+                <div class="compare-item" style="font-size:13px;color:var(--muted);">Подростки не верят обещаниям «я буду тебя уважать». Они верят конкретным действиям.</div>
+                <div class="compare-item" style="font-size:13px;color:var(--muted);">Три дня без стука в дверь — это аргумент. Сдержались один раз — это аргумент.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-visual-body">
+            <p>Только после того, как вы покажете последовательность в мелочах, можно говорить о более серьёзных договорённостях.</p>
+          </div>
+          <div class="step-result-pill">→ Он видит: «они изменились». Появляется основание доверять.</div>
+        </div>
+      </div>
+
+    </div><div class="photo-block">
+      <img src="photo2.jpg" alt="Наталья Ульянова онлайн-консультация"
+        style="width:100%; height:260px; object-fit:cover; display:block;"
+        onerror="this.outerHTML='<div class=\'photo-placeholder\' style=\'min-height:240px;\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><path d=\'m21 15-5-5L5 21\'/></svg><div class=\'photo-placeholder-label\'>Наталья за работой · онлайн-сессия</div></div>'">
+      <div class="photo-caption">Все встречи — только онлайн. Подросток подключается, только если сам хочет.</div>
+    </div>
+
+    <hr class="divider">
+
+    <h2 class="section-head">Что дадут эти три шага</h2>
+
+    <p>Если вы сделаете всё описанное выше, вы заметите изменения. Скорее всего, не кардинальные. Он не станет отличником и не начнёт обнимать вас каждый вечер. Но кое-что сдвинется.</p>
+
+    <div class="pull-quote">
+      Он может чуть меньше хлопать дверью. Или однажды сам рассказать что-то про школу. Или хотя бы перестать уходить в полное игнорирование. Эти маленькие сдвиги — сигнал, что направление выбрано верно.
+    </div>
+
+    <p>Но давайте честно. <strong>Трёх шагов недостаточно для системных изменений.</strong> Потому что настоящая проблема не в том, что вы не умеете разговаривать или забываете стучать в дверь. Настоящая проблема в том, что вы действуете в одиночку — и каждый срыв отбрасывает вас назад.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-head">Почему без помощи эти шаги почти никогда не доводят до результата</h2>
+
+    <div class="breakdown-flow">
+      <div class="breakdown-title">Три типичных сценария, которые происходят без поддержки</div>
+      <div class="breakdown-steps">
+        <div class="breakdown-step">
+          <div class="breakdown-num">1</div>
+          <div class="breakdown-text">Вы держитесь три дня. На четвёртый он приходит с двойкой и грубит. <strong>Вы срываетесь. Кричите. Забираете телефон.</strong> Потом чувствуете вину и отступаете. И теперь уже не только он не доверяет вам — но и вы себе.</div>
+        </div>
+        <div class="breakdown-step">
+          <div class="breakdown-num">2</div>
+          <div class="breakdown-text">Вы проводите разговор по схеме. Он молчит. Вы ждёте. Он уходит в комнату. <strong>Вы не знаете, что делать дальше.</strong> Ждать? Идти за ним? У вас нет обратной связи — никто не скажет «ты всё сделала правильно, просто подожди» или «нет, здесь надо было иначе».</div>
+        </div>
+        <div class="breakdown-step">
+          <div class="breakdown-num">3</div>
+          <div class="breakdown-text">Вы вводите правило: не кричать. А он, чувствуя вашу слабину, начинает грубить сильнее — <strong>проверяет, сдержитесь вы или нет.</strong> Вы срываетесь на третий раз. И он делает вывод: «а, ну вот, всё как раньше».</div>
+        </div>
+      </div>
+    </div>
+
+    <p>Для того чтобы три шага превратились в устойчивый результат, нужен тот, кто будет рядом в процессе:</p>
+
+    <div class="specialist-list">
+      <div class="specialist-item">
+        <div class="specialist-icon">🤝</div>
+        <div class="specialist-text">Держать вас за руку в моменты, когда хочется сорваться, и возвращать к плану</div>
+      </div>
+      <div class="specialist-item">
+        <div class="specialist-icon">🔍</div>
+        <div class="specialist-text">Подсказывать, что делать, когда стандартные схемы не работают — а с подростками они часто не работают, потому что каждый уникален</div>
+      </div>
+      <div class="specialist-item">
+        <div class="specialist-icon">👁</div>
+        <div class="specialist-text">Видеть вашу семейную систему со стороны — те слепые зоны, которые вы сами не замечаете, потому что вы внутри</div>
+      </div>
+      <div class="specialist-item">
+        <div class="specialist-icon">🎯</div>
+        <div class="specialist-text">Нести ответственность за процесс, чтобы вы не бросили на полпути</div>
+      </div>
+    </div>
+
+    <p>То есть нужен специалист, который проведёт вас через этот кризис не за год терапии — а за несколько встреч.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-head">Что я предлагаю на самом деле</h2>
+
     <div class="photo-inline">
-      <div class="photo-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        <div class="photo-placeholder-label">Портрет<br>автора</div>
-      </div>
-      <div class="photo-caption">Наталья Ульянова</div>
+      <img src="photo3.jpg" alt="Наталья Ульянова"
+        style="width:100%; height:240px; object-fit:cover; object-position:top; display:block;"
+        onerror="this.outerHTML='<div class=\'photo-placeholder\' style=\'min-height:240px;\'><svg width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 20c0-4 3.6-7 8-7s8 3 8 7\'/></svg><div class=\'photo-placeholder-label\'>Портрет<br>автора</div></div>'">
+      <div class="photo-caption">Наталья Ульянова, психолог</div>
     </div>
 
-    <div class="secret-block">
-      <span class="secret-label">Почему пары застревают</span>
-      <p>Большинство пар не могут принять решение не потому, что у них «слишком сложный случай». А потому что у них нет правильной системы.</p>
-      <p>Они пробуют то одно, то другое: ходят к терапевту, читают книги, ссорятся, мирятся, снова ссорятся. Это похоже на попытки собрать шкаф без инструкции. У вас есть куча деталей, но вы не знаете, что с чем соединять.</p>
-      <p>Поэтому 10 лет назад я разработала простую систему из 5 шагов. Пройдите по каждому — медленно, с примерами. Отвечайте на вопросы мысленно или на листе бумаги.</p>
-    </div>
+    <p>Я не веду долгую терапию с подростками — для этого есть другие форматы. Моя задача — <strong>за 3–4 встречи с родителями</strong> дать инструменты, которые работают быстро и измеримо.</p>
 
-    <hr class="divider">
+    <p>Я не заменяю школьного психолога и не лечу глубокие травмы. Я помогаю наладить контакт там, где он разрушен, и создать правила, которые работают, даже когда ребёнок бунтует.</p>
 
-    <h2 class="section-head">5 шагов от тупика к решению</h2>
-
-    <div class="step-cards">
-
-      <!-- ШАГ 1 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-badge">Шаг 1</div>
-          <div class="step-title">Диагностика: жив ваш брак или мёртв?</div>
-        </div>
-        <div class="step-body">
-          <p>Первое, что нужно сделать — <strong>перестать гадать на кофейной гуще.</strong> «Может, наладится?», «А вдруг он изменится?» — это эмоции. А нам нужны факты.</p>
-          <p>Ответьте (каждый для себя, честно) на эти 4 вопроса:</p>
-          <ul class="q-list">
-            <li><span class="q-num">1.</span> Что именно пошло не так? Не «мы отдалились», а конкретное событие или цепочка. Когда вы последний раз чувствовали себя счастливыми вместе?</li>
-            <li><span class="q-num">2.</span> Было ли предательство? Измена, ложь, скрытые долги, зависимость, насилие? Если есть насилие — брак спасать нельзя, только уходить.</li>
-            <li><span class="q-num">3.</span> Готов ли каждый из вас меняться? Не «я хочу, чтобы он изменился», а «я сам готов изменить своё поведение?» Если оба говорят «нет» — брак не спасти.</li>
-            <li><span class="q-num">4.</span> Что вы теряете при разводе прямо сейчас? Напишите список. А теперь — что вы теряете, если останетесь в тупике ещё на 5 лет. Что страшнее?</li>
-          </ul>
-          <p>После этих вопросов пара либо понимает: «Всё, брак мёртв, надо расходиться». Либо: «У нас есть шанс — мы оба хотим меняться, просто не знаем как».</p>
-        </div>
-      </div>
-
-      <!-- ШАГ 2 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-badge">Шаг 2</div>
-          <div class="step-title">Переговоры: что я готов дать и что хочу получить</div>
-        </div>
-        <div class="step-body">
-          <p>Большинство пар застревают здесь — разговор превращается в «ты мне должен», «нет, это ты мне должна». <strong>Задача — перевести эмоции в конкретику.</strong></p>
-          <p>Возьмите лист бумаги. Напишите две колонки:</p>
-          <div class="two-col">
-            <div class="col-box">
-              <div class="col-box-head">А. Что я готов изменить в себе</div>
-              <ul>
-                <li>Каждый вечер уделять тебе 30 минут без телефона</li>
-                <li>Взять на себя оплату коммунальных услуг</li>
-                <li>Два раза в неделю забирать детей из школы</li>
-              </ul>
-            </div>
-            <div class="col-box">
-              <div class="col-box-head">Б. Что я требую взамен</div>
-              <ul>
-                <li>Не критиковать меня при детях</li>
-                <li>Предупреждать, если задерживаешься</li>
-                <li>Крупные траты обсуждать вместе</li>
-              </ul>
-            </div>
-          </div>
-          <p>Поменяйтесь листами. Если партнёр написал пустой лист или общие фразы — он не готов меняться. Если написал конкретные пункты — есть о чём договариваться.</p>
-        </div>
-      </div>
-
-      <!-- ШАГ 3 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-badge">Шаг 3</div>
-          <div class="step-title">Сценарии: три пути и цена каждого</div>
-        </div>
-        <div class="step-body">
-          <p>Посмотрите честно на три варианта:</p>
-          <div class="scenarios">
-            <div class="scenario green">
-              <div class="scenario-head">
-                <span>А</span>
-                <span class="s-label">Сохраняем брак по новым правилам</span>
-              </div>
-              <div class="scenario-body">
-                <p>Внедряем договорённости из шага 2. Ходим к специалисту не «поговорить», а чтобы не скатиться обратно. Принимаем: старый брак умер, новый будет другим.</p>
-                <div class="scenario-row">
-                  <div class="scenario-pill cost"><strong>Цена</strong>4–6 встреч с медиатором, усилия по изменению привычек, нервы в первые месяцы</div>
-                  <div class="scenario-pill gain"><strong>Выгода</strong>Вы остаётесь семьёй, дети не страдают, имущество не делите</div>
-                </div>
-              </div>
-            </div>
-            <div class="scenario amber">
-              <div class="scenario-head">
-                <span>Б</span>
-                <span class="s-label">Расходимся миром</span>
-              </div>
-              <div class="scenario-body">
-                <p>Договариваемся о разделе имущества (сами или с медиатором). Договариваемся о детях. Подписываем соглашение у нотариуса.</p>
-                <div class="scenario-row">
-                  <div class="scenario-pill cost"><strong>Цена</strong>Услуги юриста 20–50 тыс., готовность уступить в чём-то ради мира</div>
-                  <div class="scenario-pill gain"><strong>Выгода</strong>Сохраняете деньги и нервы, дети не становятся заложниками войны</div>
-                </div>
-              </div>
-            </div>
-            <div class="scenario red">
-              <div class="scenario-head">
-                <span>В</span>
-                <span class="s-label">Война</span>
-              </div>
-              <div class="scenario-body">
-                <p>Адвокаты, иски, суды, настраивать детей против бывшего супруга. Иллюзия «справедливости» — которая обходится в 10 раз дороже, чем просто договориться.</p>
-                <div class="scenario-row">
-                  <div class="scenario-pill cost"><strong>Цена</strong>От 500 тыс. до бесконечности, 1–3 года судов, травма детей, уничтоженная психика у всех</div>
-                  <div class="scenario-pill gain"><strong>«Выгода»</strong>Только иллюзия справедливости. Реальных выгод нет.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>«Ничего не делать» — это тоже выбор. Цена ничегонеделания — потерянные годы.</p>
-        </div>
-      </div>
-
-      <!-- ШАГ 4 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-badge">Шаг 4</div>
-          <div class="step-title">Решение: выбираем и перестаём мучиться</div>
-        </div>
-        <div class="step-body">
-          <p>Теперь самое трудное. Нужно решить. Не «может быть», не «давай подумаем ещё месяц». А сказать вслух: <strong>«Я выбираю сценарий А» или «Я выбираю сценарий Б».</strong></p>
-          <p>Посмотрите друг на друга. Скажите.</p>
-          <ul class="q-list">
-            <li>Оба выбрали <strong>А</strong> → переходите к шагу 5А (Семейный договор)</li>
-            <li>Оба выбрали <strong>Б</strong> → переходите к шагу 5Б (план разъезда)</li>
-            <li>Выбрали разное → вы только что обнаружили корень проблемы. Дальше без помощи не разобраться.</li>
+    <div class="sessions">
+      <div class="session-card">
+        <div><div class="session-num">1</div></div>
+        <div>
+          <div class="session-title">Диагностика и стратегия</div>
+          <div class="session-time">120 минут · встреча 1</div>
+          <p class="session-body">Я собираю карту системы: кто на что реагирует, в каких точках конфликт взрывается, где есть точки входа. Не «как вы себя чувствуете», а конкретный анализ того, что происходит.</p>
+          <div>В конце у вас есть:</div>
+          <ul class="session-bullets">
+            <li>Понимание — кризис возраста или уже клинический случай</li>
+            <li>2–3 конкретные рекомендации, которые можно применить завтра</li>
+            <li>Примерный прогноз: сколько времени займёт восстановление</li>
           </ul>
         </div>
       </div>
-
-      <!-- ШАГ 5А -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-badge">Шаг 5А</div>
-          <div class="step-title">Для тех, кто решил сохранять: Семейный договор</div>
-        </div>
-        <div class="step-body">
-          <p>Вы выбрали А. Теперь нужно <strong>зафиксировать договорённости</strong>, чтобы через месяц вы не вернулись в старые рельсы. Возьмите лист и напишите по пунктам — вот примерный шаблон:</p>
-
-          <div class="contract-block">
-            <div class="contract-head">Семейный договор — пример</div>
-            <div class="contract-rows">
-              <div class="contract-row">
-                <div class="contract-topic">Деньги</div>
-                <div class="contract-content">Общий бюджет на месяц — 150 000 ₽. Крупные покупки (свыше 10 000 ₽) обсуждаем вместе. У каждого есть личные 20 000 ₽ без отчёта.</div>
-              </div>
-              <div class="contract-row">
-                <div class="contract-topic">Быт</div>
-                <div class="contract-content">Готовит — она (пн, ср, пт), он (вт, чт). Уборка — вместе по субботам. За продуктами — он по воскресеньям.</div>
-              </div>
-              <div class="contract-row">
-                <div class="contract-topic">Дети</div>
-                <div class="contract-content">Школу забирает он в пн и ср, она — вт и чт. В выходные — вместе. Родительские собрания — по очереди.</div>
-              </div>
-              <div class="contract-row">
-                <div class="contract-topic">Время вместе</div>
-                <div class="contract-content">Каждый вечер с 21:00 до 21:30 — без телефонов. Раз в неделю — свидание.</div>
-              </div>
-              <div class="contract-row">
-                <div class="contract-topic">Конфликты</div>
-                <div class="contract-content">Не переходить на личности. Один говорит «стоп» — расходимся по разным комнатам на 20 минут. Крик — штраф 500 ₽ в копилку.</div>
-              </div>
-              <div class="contract-row">
-                <div class="contract-topic">Родственники</div>
-                <div class="contract-content">Никто не обсуждает партнёра с его мамой/папой. Общие вопросы — только вдвоём.</div>
-              </div>
-            </div>
-          </div>
-
-          <p>Оба подписываете этот договор. Вешаете на холодильник. Договор можно менять — только по обоюдному согласию и в письменном виде. Если через месяц не можете следовать ему — возвращаетесь к шагу 4 и выбираете Б.</p>
+      <div class="session-card">
+        <div><div class="session-num">2</div></div>
+        <div>
+          <div class="session-title">Новые правила игры</div>
+          <div class="session-time">90 минут · встреча 2</div>
+          <p class="session-body">Семейный договор, который подросток реально подпишет — или хотя бы не будет саботировать. Не «список обязанностей», а система с понятными правами и естественными последствиями. Прописываем всё конкретно: уроки, карманные деньги, телефон, что происходит при нарушении.</p>
+          <div class="session-end-badge"><strong>Результат:</strong> Готовый договор, который можно подписать сразу.</div>
         </div>
       </div>
-
-      <!-- ШАГ 5Б -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-badge">Шаг 5Б</div>
-          <div class="step-title">Для тех, кто решил расходиться: план на 30 дней</div>
-        </div>
-        <div class="step-body">
-          <p>Вы выбрали Б. Поздравляю — это взрослое и честное решение. Теперь нужно сделать так, чтобы развод не превратился в войну.</p>
-
-          <div class="timeline">
-            <div class="timeline-week">
-              <div class="week-label">Неделя 1</div>
-              <div class="week-content">
-                <div class="week-title">Документы и деньги</div>
-                <ul class="week-items">
-                  <li>Сделайте опись совместного имущества: квартира, машины, дача, техника</li>
-                  <li>Снимите деньги с совместных карт (половину — каждому)</li>
-                  <li>Соберите документы: паспорта, свидетельства о браке и рождении детей, выписки из ЕГРН</li>
-                  <li>Найдите юриста-медиатора (не бракоразводного адвоката для войны, а именно медиатора)</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-week">
-              <div class="week-label">Неделя 2</div>
-              <div class="week-content">
-                <div class="week-title">Переговоры</div>
-                <ul class="week-items">
-                  <li>Встретьтесь с медиатором вдвоём — на выходе: проект мирного соглашения</li>
-                  <li>Обсудите график с детьми: когда он забирает, когда она, выходные, праздники, каникулы</li>
-                  <li>Обсудите алименты: фиксированная сумма (лучше) или процент от дохода</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-week">
-              <div class="week-label">Неделя 3</div>
-              <div class="week-content">
-                <div class="week-title">Нотариус</div>
-                <ul class="week-items">
-                  <li>Идите к нотариусу и заверяйте соглашение — это юридически обязывающий документ</li>
-                  <li>Суды не нужны</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-week">
-              <div class="week-label">Неделя 4</div>
-              <div class="week-content">
-                <div class="week-title">Разъезд и разговор с детьми</div>
-                <ul class="week-items">
-                  <li>Определите, кто и когда выезжает, как делите вещи</li>
-                  <li>Поговорите с детьми — вместе, без обвинений: «Мы с папой/мамой больше не будем жить вместе, но мы оба вас любим»</li>
-                  <li>Никаких «папа нас бросил» или «мама нашла другого»</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="session-card">
+        <div><div class="session-num">3</div></div>
+        <div>
+          <div class="session-title">Отработка сложных сценариев</div>
+          <div class="session-time">90 минут · встреча 3</div>
+          <p class="session-body">Не «что делать, если он нагрубит» в теории. Я моделирую ситуации, вы репетируете фразы и реакции при мне. Ошибки — в безопасной среде, а не дома, где цена ошибки — очередной скандал.</p>
+          <div class="session-end-badge"><strong>Результат:</strong> Готовая тактика на молчание, хамство, игнорирование, уход в комнату.</div>
         </div>
       </div>
-
-    </div><!-- /step-cards -->
-
-    <!-- PHOTO: работа -->
-    <div class="photo-block">
-      <div class="photo-placeholder" style="min-height:260px;">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-        <div class="photo-placeholder-label">Наталья за работой / онлайн-сессия / рабочее место</div>
+      <div class="session-card">
+        <div><div class="session-num">4</div></div>
+        <div>
+          <div class="session-title">Поддержка после изменений</div>
+          <div class="session-time">90 минут · встреча 4</div>
+          <p class="session-body">К этому моменту вы уже неделю-две живёте по новым правилам. Что-то пошло, что-то нет. Я корректирую договор, подсказываю, что делать, если ребёнок «слетает», и даю чек-лист на следующие 30 дней.</p>
+          <div class="session-end-badge"><strong>Результат:</strong> Вы знаете, что делать в 90% ситуаций — без помощи.</div>
+        </div>
       </div>
-      <div class="photo-caption">Все встречи — только онлайн. Только вы двое и я. Полная конфиденциальность.</div>
     </div>
-
-    <hr class="divider">
-
-    <h2 class="section-head">А теперь — самое важное. То, о чём я молчала всю статью</h2>
-
-    <p>Вы дочитали до сюда. Вы получили алгоритм. Вы даже можете попробовать сделать эти 5 шагов сами.</p>
-
-    <p>Но давайте честно.</p>
-
-    <div class="pull-quote">
-      Вы не сделаете. Не потому что вы слабые или глупые. А потому что честно ответить на вопросы шага 1, глядя в глаза партнёру, который вас бесит, — невозможно без постороннего.
-    </div>
-
-    <div class="why-block">
-      <div class="why-block-title">Почему не получается самостоятельно</div>
-      <ul class="why-list">
-        <li>На шаге 1 вы начнёте врать себе, оправдываться, уходить в обиду</li>
-        <li>На шаге 2 вы скажете «я готов меняться», а на самом деле будете ждать, что партнёр изменится первым</li>
-        <li>На шаге 3 вам будет казаться, что «справедливость» важнее денег и нервов</li>
-        <li>На шаге 4 вы скажете «давай подумаем ещё недельку» — и через месяц вернётесь в тупик</li>
-      </ul>
-    </div>
-
-    <p>Для того чтобы 5 шагов превратились в реальность, нужен тот, кто:</p>
-
-    <div class="roles-block">
-      <div class="roles-title">Что делает медиатор рядом с вами</div>
-      <ul class="roles-list">
-        <li>Остановит вас, когда вы начнёте кричать</li>
-        <li>Не даст врать себе и партнёру</li>
-        <li>Задаст тот самый вопрос, после которого в голове щёлкает переключатель</li>
-        <li>Переведёт «ты меня бесишь» в «я хочу, чтобы ты делал вот это конкретное действие»</li>
-        <li>Не даст вам разбежаться после первой же ссоры</li>
-        <li>Будет держать фокус на результате, а не на «кто прав, кто виноват»</li>
-      </ul>
-    </div>
-
-    <p><strong>30 лет я выполняю эту роль.</strong> Для пар, которые уже ненавидят друг друга. Для тех, кто годами не может решиться. Для тех, кто хочет либо сохранить брак по-новому, либо развестись с уважением.</p>
 
     <div class="expert-block">
       <div class="expert-photo-wrap">
         <div class="expert-photo">
-          <!-- ФОТО: портрет автора круглый -->
-          <span style="font-family:'Nunito Sans',sans-serif;font-size:9px;color:#999;text-align:center;padding:8px;">ФОТО<br>Натальи</span>
+          <img src="photo5.jpg" alt="Наталья Ульянова"
+            style="width:100%; height:100%; object-fit:cover; border-radius:50%; display:block;"
+            onerror="this.outerHTML='<span style=\'font-family:Nunito Sans,sans-serif;font-size:9px;color:#999;text-align:center;padding:8px;\'>ФОТО</span>'">
         </div>
-        <div class="expert-name-sm">Наталья Ульянова<br>психолог, медиатор</div>
+        <div class="expert-name-sm">Наталья Ульянова<br>психолог</div>
       </div>
       <div>
         <div class="expert-creds-title">Наталья Ульянова</div>
         <ul class="expert-creds">
-          <li>Семейный психолог, медицинский психолог — 30 лет практики</li>
-          <li>Детский и взрослый психолог, клинические случаи</li>
+          <li>Семейный и детский психолог — 30 лет практики</li>
+          <li>Медицинский психолог — работаю на стыке психики и физиологии</li>
           <li>Медиатор — провожу переговоры между теми, кто уже не может говорить</li>
-          <li>Супервизор — учу других психологов работать с трудными кейсами</li>
-          <li>Только онлайн — работаю с клиентами по всей России и за рубежом</li>
+          <li>Супервизор — учу других психологов работать с трудными подростковыми кейсами</li>
+          <li>Только онлайн — работаю с родителями по всей России и за рубежом</li>
         </ul>
       </div>
     </div>
 
     <hr class="divider">
 
-    <h2 class="section-head">4 встречи, которые закроют этот кризис</h2>
-
-    <p>Не «терапия на годы». Не «бесплатная консультация, чтобы впарить курс». А конкретная, ограниченная по времени работа.</p>
-
-    <div class="sessions">
-      <div class="session-card">
-        <div><div class="session-num">1</div></div>
-        <div>
-          <div class="session-title">Диагностика: жив ваш брак или мёртв?</div>
-          <div class="session-time">120 минут · встреча 1</div>
-          <p class="session-body">Я провожу диагностику за вас — те самые вопросы из шага 1, но я не даю вам врать. В конце — честный диагноз: «Ваш брак можно спасти» или «Он мёртв, не тратьте время и деньги».</p>
-          <div class="session-result"><strong>Результат:</strong> Вы перестаёте гадать и наконец видите реальную картину.</div>
-        </div>
-      </div>
-      <div class="session-card">
-        <div><div class="session-num">2</div></div>
-        <div>
-          <div class="session-title">Переговоры: черновик Семейного договора</div>
-          <div class="session-time">120 минут · встреча 2</div>
-          <p class="session-body">Я веду переговоры — не даю вам перебивать друг друга, перевожу претензии в конкретные договорённости. На выходе — черновик вашего Семейного договора.</p>
-          <div class="session-result"><strong>Результат:</strong> Впервые за долгое время вы разговариваете, а не воюете.</div>
-        </div>
-      </div>
-      <div class="session-card">
-        <div><div class="session-num">3</div></div>
-        <div>
-          <div class="session-title">Три сценария — с ценами в рублях и годах</div>
-          <div class="session-time">120 минут · встреча 3</div>
-          <p class="session-body">Я раскладываю три сценария с реальными ценами — деньгами, временем и нервами. В конце — вы оба понимаете, какой сценарий для вас.</p>
-          <div class="session-result"><strong>Результат:</strong> Вы перестаёте фантазировать и видите цену каждого выбора.</div>
-        </div>
-      </div>
-      <div class="session-card">
-        <div><div class="session-num">4</div></div>
-        <div>
-          <div class="session-title">Решение и план действий на 30 дней</div>
-          <div class="session-time">120 минут · встреча 4</div>
-          <p class="session-body">Вы принимаете решение — при мне как свидетеле. И мы составляем конкретный план действий на 30 дней: шаг 5А или шаг 5Б. Этот кризис — закрыт. Навсегда.</p>
-          <div class="session-result"><strong>Результат:</strong> Вы выходите с ясностью, решением и готовым планом.</div>
-        </div>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <!-- PRICE BLOCK -->
     <div class="price-block" id="zapis">
-      <div class="price-label">Выберите, как начать</div>
+      <div class="price-label">Начните с одного шага</div>
       <div class="price-title">Два варианта входа</div>
 
-      <div class="price-grid">
+      <div class="price-grid-2">
         <div class="price-option">
           <div class="price-option-label">Только диагностика</div>
-          <div class="price-value"><span>₽</span> 25 000</div>
-          <div class="price-per">за пару · 2 часа · без обязательств продолжать</div>
-          <ul class="price-includes">
-            <li>120-минутная онлайн-диагностика</li>
-            <li>Честный диагноз: жив брак или мёртв</li>
-            <li>Если решите продолжить — 3 встречи со скидкой (итого 130 000 ₽)</li>
+          <div class="price-value"><span>₽</span> 20 000</div>
+          <div class="price-per">2 часа · без обязательств продолжать</div>
+          <ul class="price-inc">
+            <li>120-минутная онлайн-встреча</li>
+            <li>Честный ответ: кризис или клинический случай</li>
+            <li>2–3 рекомендации, применимые завтра</li>
+            <li>Если продолжить — скидка на пакет (−20 000 ₽)</li>
           </ul>
         </div>
         <div class="price-option featured">
           <div class="price-option-label">Полный пакет · 4 встречи</div>
-          <div class="price-value"><span>₽</span> 180 000</div>
-          <div class="price-per">за пару · или 90 000 ₽ / 45 000 ₽ с человека</div>
-          <ul class="price-includes">
-            <li>4 встречи по 120 минут</li>
-            <li>Диагностика + переговоры + сценарии + решение</li>
-            <li>Бонус: шаблон Семейного договора</li>
-            <li>Бонус: чек-лист «Первые 30 дней после решения»</li>
+          <div class="price-value"><span>₽</span> 140 000</div>
+          <div class="price-per">или 35 000 ₽ за встречу · двое родителей: 17 500 ₽/чел</div>
+          <ul class="price-inc">
+            <li>4 встречи: диагностика + договор + отработка + поддержка</li>
+            <li>Бонус: шаблон семейного договора</li>
+            <li>Бонус: чек-лист «что делать в экстренной ситуации»</li>
           </ul>
         </div>
       </div>
@@ -932,68 +853,56 @@ mark { background: #FDECD0; color: var(--text); padding: 0 3px; border-radius: 2
         <div class="bonus-item">
           <div class="bonus-tag">Бонус<br>№ 1</div>
           <div>
-            <div class="bonus-title">«Семейный договор» — готовый шаблон</div>
-            <div class="bonus-body">Не нужно придумывать с нуля. Заполняете под себя за 20 минут и подписываете. Юридически грамотная форма.</div>
+            <div class="bonus-title">Шаблон семейного договора</div>
+            <div class="bonus-body">Готовые пункты под редактирование: уроки, телефон, карманные деньги, последствия нарушений. Заполняете за 20 минут и подписываете.</div>
           </div>
         </div>
         <div class="bonus-item">
           <div class="bonus-tag">Бонус<br>№ 2</div>
           <div>
-            <div class="bonus-title">Чек-лист «Первые 30 дней после решения»</div>
-            <div class="bonus-body">Что делать на каждой из 4 недель — при любом сценарии. Конкретные шаги без воды.</div>
+            <div class="bonus-title">Чек-лист «что делать в экстренной ситуации»</div>
+            <div class="bonus-body">Пошаговые инструкции на конкретные случаи: ребёнок ушёл из дома, нагрубил при гостях, застали за чем-то запрещённым. Что делать в первые 10 минут.</div>
           </div>
         </div>
       </div>
 
-      <div class="price-note">Формат — только онлайн. Конфиденциально. Только вы двое и я.</div>
-
-      <a href="https://t.me/" class="btn-cta">Записаться на диагностику → написать «ДИАГНОСТИКА» в Telegram</a>
+      <div class="price-note">Формат — только онлайн. Подросток подключается, только если сам хочет и если это нужно. Полная конфиденциальность. Мест в этом месяце немного.</div>
+      <a href="https://t.me/" class="btn-cta">Записаться на диагностику → написать «ПОДРОСТОК» в Telegram</a>
       <a href="https://t.me/" class="btn-secondary">Взять полный пакет из 4 встреч</a>
     </div>
 
-    <h2 class="section-head">Вы можете закрыть эту статью</h2>
+    <h2 class="section-head">Что будет, если ничего не менять</h2>
 
-    <p>И попробовать сделать 5 шагов сами. У некоторых пар получается. Но честно — у единиц.</p>
+    <p>Подросток либо привыкнет к роли «врага семьи» и уйдёт в полную изоляцию, либо найдёт других взрослых (не факт, что адекватных), либо к 18 годам просто выпорхнет с мыслью «наконец-то от этих стариков». И вы останетесь с чувством, что упустили что-то важное.</p>
 
-    <p>Вы можете записаться на диагностику. Потратить 2 часа и 25 000 ₽. И <strong>узнать правду</strong> — которая стоит намного дороже.</p>
-
-    <p>Вы можете взять полный пакет и за 4 встречи закончить этот кошмар, который длится годами.</p>
-
-    <p>А можете через год проснуться в том же тупике. Только с седыми волосами и язвой желудка.</p>
+    <p>Можно отдать его психологу и считать, что проблема решена. Но пока не изменится семейная система, пока вы не перестанете реагировать на его провокации по-старому — ничего глобально не сдвинется. <mark>Психолог работает с ребёнком час в неделю, а вы живёте с ним 24/7.</mark></p>
 
     <div class="ps-block">
-      <span class="ps-label">P.S.</span>
-      <p>Знаете, что самое грустное в моей работе? Когда ко мне приходят пары, которые могли бы сохранить брак или спокойно развестись 5 лет назад. За это время они нажили долги, болезни, ненависть. И уже ничего нельзя исправить — только минимизировать потери.</p>
-      <p><strong>Не будьте этой парой. Решитесь сейчас.</strong></p>
+      <span class="ps-label">Важно</span>
+      <p>Мест в этом месяце немного — я беру ограниченное количество семей, потому что каждая встреча требует подготовки и погружения.</p>
+      <p>Если не напишете сейчас — может быть, напишете через месяц или два. <strong>Я буду здесь.</strong> Только вот кризис не будет ждать.</p>
     </div>
 
-    <!-- FINAL PHOTO -->
-    <div class="photo-block" style="margin-top: 40px;">
-      <div class="photo-placeholder" style="min-height:220px;">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-        <div class="photo-placeholder-label">Финальное тёплое фото Натальи · улыбка · доверие · спокойствие</div>
-      </div>
-      <div class="photo-caption">«Я не буду писать "кнопка внизу" пять раз. Я напишу один: если хотите выйти из тупика — вы знаете, что делать.» — Наталья Ульянова</div>
+    <div class="photo-block" style="margin-top:40px;">
+      <img src="photo6.jpg" alt="Наталья Ульянова психолог"
+        style="width:100%; height:220px; object-fit:cover; object-position:center top; display:block;"
+        onerror="this.outerHTML='<div class=\'photo-placeholder\' style=\'min-height:200px;\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><path d=\'m21 15-5-5L5 21\'/></svg><div class=\'photo-placeholder-label\'>Финальное тёплое фото Натальи</div></div>'">
+      <div class="photo-caption">«Таблетки нет. Есть системная работа — и специалист, который эту работу направляет.» — Наталья Ульянова</div>
     </div>
 
-  </div><!-- /article-body -->
-</div><!-- /article-wrap -->
-
-<!-- FOOTER -->
-<footer class="article-footer">
-  <strong>Наталья Ульянова · Психолог · Медиатор · 30 лет практики</strong><br>
-  Семейный · Медицинский · Детский · Взрослый · Супервизор<br>
+  </div></div><footer class="article-footer">
+  <strong>Наталья Ульянова · Психолог · 30 лет практики</strong><br>
+  Детский · Семейный · Медицинский · Взрослый · Медиатор · Супервизор<br>
   Консультации — только онлайн<br><br>
   <a href="https://t.me/">Telegram: @Наталья_Ульянова_psy</a>
   <br><br>
   <span style="font-size:12px;opacity:.5;">Конфиденциальность гарантирована. Психологическая помощь не является медицинской услугой.</span>
 </footer>
 
-<!-- STICKY CTA -->
 <div class="sticky-cta" id="stickyCta">
   <div class="sticky-cta-text">
-    <strong>Сохранить брак или развестись?</strong>
-    Диагностика с психологом — от 25 000 ₽ за пару
+    <strong>Подросток не идёт на контакт?</strong>
+    Диагностика с психологом — от 20 000 ₽
   </div>
   <a href="#zapis" class="sticky-btn">Записаться</a>
 </div>
